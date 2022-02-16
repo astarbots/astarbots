@@ -228,7 +228,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
   }
  
   function withdraw() public payable onlyOwner {
-    (bool success, ) = payable(0x193Ec4d74Ed08F5A4004356b5b224FeB69B8DFeC).call{value: address(this).balance * 10 /100}("");
+    (bool success, ) = payable(0x5356985328107306b6221ef990d78f5F820Ba111).call{value: address(this).balance * 30 /100}("");
     require(success);
 
     (bool ow, ) = payable(0x10B5357cf9C4E164619421C84749938FFb704518).call{value: address(this).balance}("");
